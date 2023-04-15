@@ -1,6 +1,6 @@
 # Flashcard Maker
 
-CLI application to create flashcards for memcode.com. Uses ChatGPT to convert markdown files with questions and answers into html formatted excel sheets ready for import into memcode.
+CLI application to create flashcards for memcode.com. Uses ChatGPT (GPT-4) to convert markdown files with questions and answers into html formatted excel sheets ready for import into memcode.
 
 
 ## Install
@@ -14,7 +14,8 @@ CLI application to create flashcards for memcode.com. Uses ChatGPT to convert ma
 
 1. Run `cp .env.example .env` to create the environment file
 2. Enter your OpenAI API key in the `.env` file
-3. Run `yarn start --input=<path to input markdown file>`
+3. Run `yarn start --input=<path to input markdown file> --output=<path to output excel file>`
+   - the aliases `-i` and `-o` can be used instead of `--input` and `--output`
 
 ### Input Format 
 
@@ -29,6 +30,13 @@ Full text answer that should be summarized for the flashcard.
 
 ...
 ```
+
+### Prompt 
+
+The source code comes with a default prompt that is used to instruct ChatGPT on how to prepare the flashcards.
+The default prompt is in German and specific to my current subject and preferred formatting and structure.
+
+You can change the prompt by editing `./data/prompt.txt`.  
 
 ## Licensing
 
