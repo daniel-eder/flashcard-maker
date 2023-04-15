@@ -1,0 +1,10 @@
+{
+  "name": "flashcard-maker",
+  "description": "CLI application to create flashcards for memcode.com. Uses ChatGPT to convert markdown files with questions and answers into html formatted excel sheets ready for import into memcode.",
+  "packageManager": "yarn@3.5.0",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "yarn node ./src/index.js ...$@"
+  }
+}
