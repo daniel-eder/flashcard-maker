@@ -2,7 +2,6 @@
 
 CLI application to create flashcards for memcode.com. Uses ChatGPT (GPT-4) to convert markdown files with questions and answers into html formatted excel sheets ready for import into memcode.
 
-
 ## Install
 
 1. Install Node.js (https://nodejs.org/en/download/) - it is recommended to use the latest LTS version.
@@ -30,6 +29,8 @@ Full text answer that should be summarized for the flashcard.
 
 ...
 ```
+
+See also `./content/input.md` for an example.
 
 ### Prompt 
 
