@@ -33,9 +33,16 @@ class App {
     let questionIndex = 0;
     for (const questionAnswerPair of questionAnswerPairs) {
       console.log(`Processing question ${++questionIndex} of ${questionAnswerPairs.length}...`);
-      const response = await this.createChatCompletion(prompt, questionAnswerPair);
-      const flashcard = this.convertCompletionToFlashcard(questionAnswerPair, response);
-      flashcards.push(flashcard);
+      const {question, _} = this.splitQuestionAndAnswer(questionAnswerPair);
+
+      try {
+        const response = await this.createChatCompletion(prompt, questionAnswerPair);
+        const flashcard = this.convertCompletionToFlashcard(question, response);
+        flashcards.push(flashcard);
+      } catch (error) {
+        console.error(`Error processing question (${questionIndex}) "${question}":`, error);
+        break;
+      }
     }
 
     await this.writeExcelFile(outputFile, flashcards);
@@ -91,8 +98,7 @@ class App {
     return completion.data.choices[0].message;
   }
 
-  convertCompletionToFlashcard(questionAnswerPair, response) {
-    const {question, _} = this.splitQuestionAndAnswer(questionAnswerPair);
+  convertCompletionToFlashcard(question, response) {
     const answerHtml = this.converter.makeHtml(response.content);
 
     return {question, answer: answerHtml};
