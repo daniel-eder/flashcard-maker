@@ -1,3 +1,7 @@
+# output files
+
+content/**/*.xlsx
+
 # env files
 .env
 .env.local
