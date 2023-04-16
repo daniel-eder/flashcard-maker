@@ -1,4 +1,4 @@
-import * as dotenv from 'dotenv'
+import * as dotenv from 'dotenv';
 import minimist from 'minimist';
 import fs from 'fs';
 import showdown from 'showdown';

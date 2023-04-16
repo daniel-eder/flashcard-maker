@@ -6,11 +6,13 @@
   "type": "module",
   "scripts": {
     "summarize": "yarn node ./src/summarize.js",
+    "format": "yarn node ./src/format.js"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
     "minimist": "^1.2.8",
     "openai": "^3.2.1",
+    "read-excel-file": "^5.6.1",
     "showdown": "^2.1.0",
     "write-excel-file": "^1.4.25"
   }
