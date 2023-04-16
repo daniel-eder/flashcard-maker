@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "yarn node ./src/index.js"
+    "summarize": "yarn node ./src/summarize.js",
   },
   "dependencies": {
     "dotenv": "^16.0.3",

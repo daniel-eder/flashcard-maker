@@ -82,7 +82,7 @@ class App {
   }
 
   async readPrompt() {
-    return fs.promises.readFile('data/prompt.txt', 'utf-8');
+    return fs.promises.readFile('data/summarize_prompt.txt', 'utf-8');
   }
 
   async createChatCompletion(prompt, questionAnswerPair) {
@@ -94,6 +94,7 @@ class App {
     const completion = await this.openAiApi.createChatCompletion({
       model: this.model,
       messages: messages,
+      temperature: 0.2,
     });
     return completion.data.choices[0].message;
   }
