@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:16.0.3"],\
             ["minimist", "npm:1.2.8"],\
             ["openai", "npm:3.2.1"],\
+            ["read-excel-file", "npm:5.6.1"],\
             ["showdown", "npm:2.1.0"],\
             ["write-excel-file", "npm:1.4.25"]\
           ],\
@@ -43,6 +44,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@babel/runtime", "npm:7.21.0"],\
             ["regenerator-runtime", "npm:0.13.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@xmldom/xmldom", [\
+        ["npm:0.8.7", {\
+          "packageLocation": "./.yarn/cache/@xmldom-xmldom-npm-0.8.7-b6ccf72365-593d4429c2.zip/node_modules/@xmldom/xmldom/",\
+          "packageDependencies": [\
+            ["@xmldom/xmldom", "npm:0.8.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -128,6 +138,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["big-integer", [\
+        ["npm:1.6.51", {\
+          "packageLocation": "./.yarn/cache/big-integer-npm-1.6.51-1a244d8e1f-3d444173d1.zip/node_modules/big-integer/",\
+          "packageDependencies": [\
+            ["big-integer", "npm:1.6.51"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["binary", [\
+        ["npm:0.3.0", {\
+          "packageLocation": "./.yarn/cache/binary-npm-0.3.0-56515cf10f-b4699fda9e.zip/node_modules/binary/",\
+          "packageDependencies": [\
+            ["binary", "npm:0.3.0"],\
+            ["buffers", "npm:0.1.1"],\
+            ["chainsaw", "npm:0.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["bl", [\
         ["npm:4.1.0", {\
           "packageLocation": "./.yarn/cache/bl-npm-4.1.0-7f94cdcf3f-9e8521fa7e.zip/node_modules/bl/",\
@@ -136,6 +166,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["buffer", "npm:5.7.1"],\
             ["inherits", "npm:2.0.4"],\
             ["readable-stream", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["bluebird", [\
+        ["npm:3.4.7", {\
+          "packageLocation": "./.yarn/cache/bluebird-npm-3.4.7-5dff099581-bffa9dee7d.zip/node_modules/bluebird/",\
+          "packageDependencies": [\
+            ["bluebird", "npm:3.4.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -175,6 +214,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/buffer-crc32-npm-0.2.13-c4b6fceac1-06252347ae.zip/node_modules/buffer-crc32/",\
           "packageDependencies": [\
             ["buffer-crc32", "npm:0.2.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["buffer-indexof-polyfill", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/buffer-indexof-polyfill-npm-1.0.2-39d49d63c8-fbfb2d69c6.zip/node_modules/buffer-indexof-polyfill/",\
+          "packageDependencies": [\
+            ["buffer-indexof-polyfill", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["buffers", [\
+        ["npm:0.1.1", {\
+          "packageLocation": "./.yarn/cache/buffers-npm-0.1.1-59dbe6d7fb-ad6f8e483e.zip/node_modules/buffers/",\
+          "packageDependencies": [\
+            ["buffers", "npm:0.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["chainsaw", [\
+        ["npm:0.1.0", {\
+          "packageLocation": "./.yarn/cache/chainsaw-npm-0.1.0-0d34a3db01-22a96b9fb0.zip/node_modules/chainsaw/",\
+          "packageDependencies": [\
+            ["chainsaw", "npm:0.1.0"],\
+            ["traverse", "npm:0.3.9"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -267,12 +334,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["duplexer2", [\
+        ["npm:0.1.4", {\
+          "packageLocation": "./.yarn/cache/duplexer2-npm-0.1.4-6bca6bef12-744961f03c.zip/node_modules/duplexer2/",\
+          "packageDependencies": [\
+            ["duplexer2", "npm:0.1.4"],\
+            ["readable-stream", "npm:2.3.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["end-of-stream", [\
         ["npm:1.4.4", {\
           "packageLocation": "./.yarn/cache/end-of-stream-npm-1.4.4-497fc6dee1-530a5a5a1e.zip/node_modules/end-of-stream/",\
           "packageDependencies": [\
             ["end-of-stream", "npm:1.4.4"],\
             ["once", "npm:1.4.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["fflate", [\
+        ["npm:0.7.4", {\
+          "packageLocation": "./.yarn/cache/fflate-npm-0.7.4-df9245ab05-b812ab2604.zip/node_modules/fflate/",\
+          "packageDependencies": [\
+            ["fflate", "npm:0.7.4"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -294,6 +380,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:16.0.3"],\
             ["minimist", "npm:1.2.8"],\
             ["openai", "npm:3.2.1"],\
+            ["read-excel-file", "npm:5.6.1"],\
             ["showdown", "npm:2.1.0"],\
             ["write-excel-file", "npm:1.4.25"]\
           ],\
@@ -348,6 +435,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-99ddea01a7.zip/node_modules/fs.realpath/",\
           "packageDependencies": [\
             ["fs.realpath", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["fstream", [\
+        ["npm:1.0.12", {\
+          "packageLocation": "./.yarn/cache/fstream-npm-1.0.12-db27e8a713-e6998651ae.zip/node_modules/fstream/",\
+          "packageDependencies": [\
+            ["fstream", "npm:1.0.12"],\
+            ["graceful-fs", "npm:4.2.11"],\
+            ["inherits", "npm:2.0.4"],\
+            ["mkdirp", "npm:0.5.6"],\
+            ["rimraf", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -456,6 +556,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["listenercount", [\
+        ["npm:1.0.1", {\
+          "packageLocation": "./.yarn/cache/listenercount-npm-1.0.1-01172e4210-0f1c9077cd.zip/node_modules/listenercount/",\
+          "packageDependencies": [\
+            ["listenercount", "npm:1.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["lodash.defaults", [\
         ["npm:4.2.0", {\
           "packageLocation": "./.yarn/cache/lodash.defaults-npm-4.2.0-c5dea025ab-8492325823.zip/node_modules/lodash.defaults/",\
@@ -547,6 +656,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["mkdirp", [\
+        ["npm:0.5.6", {\
+          "packageLocation": "./.yarn/cache/mkdirp-npm-0.5.6-dcd5a6b97b-0c91b721bb.zip/node_modules/mkdirp/",\
+          "packageDependencies": [\
+            ["mkdirp", "npm:0.5.6"],\
+            ["minimist", "npm:1.2.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["normalize-path", [\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/normalize-path-npm-3.0.0-658ba7d77f-88eeb4da89.zip/node_modules/normalize-path/",\
@@ -604,6 +723,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["read-excel-file", [\
+        ["npm:5.6.1", {\
+          "packageLocation": "./.yarn/cache/read-excel-file-npm-5.6.1-a2930bb2a6-975fc2f8b9.zip/node_modules/read-excel-file/",\
+          "packageDependencies": [\
+            ["read-excel-file", "npm:5.6.1"],\
+            ["@xmldom/xmldom", "npm:0.8.7"],\
+            ["fflate", "npm:0.7.4"],\
+            ["unzipper", "npm:0.10.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["readable-stream", [\
         ["npm:2.3.8", {\
           "packageLocation": "./.yarn/cache/readable-stream-npm-2.3.8-67a94c2cb1-6564546703.zip/node_modules/readable-stream/",\
@@ -645,6 +776,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.11-90bf536060-27481628d2.zip/node_modules/regenerator-runtime/",\
           "packageDependencies": [\
             ["regenerator-runtime", "npm:0.13.11"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rimraf", [\
+        ["npm:2.7.1", {\
+          "packageLocation": "./.yarn/cache/rimraf-npm-2.7.1-9a71f3cc37-cdc7f6eacb.zip/node_modules/rimraf/",\
+          "packageDependencies": [\
+            ["rimraf", "npm:2.7.1"],\
+            ["glob", "npm:7.2.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -712,6 +853,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-constants", "npm:1.0.0"],\
             ["inherits", "npm:2.0.4"],\
             ["readable-stream", "npm:3.6.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["traverse", [\
+        ["npm:0.3.9", {\
+          "packageLocation": "./.yarn/cache/traverse-npm-0.3.9-913743c694-982982e4e2.zip/node_modules/traverse/",\
+          "packageDependencies": [\
+            ["traverse", "npm:0.3.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["unzipper", [\
+        ["npm:0.10.11", {\
+          "packageLocation": "./.yarn/cache/unzipper-npm-0.10.11-7a1d871174-006cd43ec4.zip/node_modules/unzipper/",\
+          "packageDependencies": [\
+            ["unzipper", "npm:0.10.11"],\
+            ["big-integer", "npm:1.6.51"],\
+            ["binary", "npm:0.3.0"],\
+            ["bluebird", "npm:3.4.7"],\
+            ["buffer-indexof-polyfill", "npm:1.0.2"],\
+            ["duplexer2", "npm:0.1.4"],\
+            ["fstream", "npm:1.0.12"],\
+            ["graceful-fs", "npm:4.2.11"],\
+            ["listenercount", "npm:1.0.1"],\
+            ["readable-stream", "npm:2.3.8"],\
+            ["setimmediate", "npm:1.0.5"]\
           ],\
           "linkType": "HARD"\
         }]\
