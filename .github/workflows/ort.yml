@@ -19,7 +19,7 @@ jobs:
         with:
           repository: 'jshttp/mime-types'
       - name: Run GitHub Action for ORT
-        uses: oss-review-toolkit/ort-ci-github-action@latest
+        uses: oss-review-toolkit/ort-ci-github-action@v1
         with:
           ort-config-repository: 'https://github.com/oss-review-toolkit/ort-config'
           ort-config-revision: 'main'
