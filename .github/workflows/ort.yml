@@ -17,7 +17,7 @@ jobs:
       - name: Checkout project
         uses: actions/checkout@v3
         with:
-          repository: 'jshttp/mime-types'
+          repository: 'https://github.com/daniel-eder/flashcard-maker'
       - name: Run GitHub Action for ORT
         uses: oss-review-toolkit/ort-ci-github-action@main
         with:
